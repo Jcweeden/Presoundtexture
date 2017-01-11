@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jcw32.presoundtexture.ConfigurationPage">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/currentConfigText"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="Current Config: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#B3B3B3"
+        android:paddingLeft="10dp"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:paddingTop="45dp"
+        android:paddingBottom="0dp"
+        android:id="@+id/configList"
+        android:layout_alignParentStart="true"
+         />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    <Button
+        android:id="@+id/editConfigBut"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="Edit Config" />
+        <Button
+            android:id="@+id/newConfigBut"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:text="New Config"
+            android:layout_toRightOf="@+id/editConfigBut"/>
+        </RelativeLayout>
+</RelativeLayout>

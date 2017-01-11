@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Presoundtexture</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_configuration_page">Switch Configuration</string>
+    <string name="title_activity_new_configuration_page">New Configuration</string>
+    <string name="title_activity_edit_configuration_page">Edit Current Configuration</string>
+</resources>

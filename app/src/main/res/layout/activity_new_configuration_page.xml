@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jcw32.presoundtexture.NewConfigurationPage"
+    >
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Enter New Configuration Name"
+        android:ems="10"
+        android:id="@+id/configNameText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:rowCount="8"
+        android:columnCount="3"
+        android:id="@+id/grid"
+        android:columnOrderPreserved="false"
+        android:rowOrderPreserved="false"
+        android:touchscreenBlocksFocus="false"
+        android:useDefaultMargins="true"
+        android:paddingBottom="1dp"
+        android:paddingTop="15dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invert Brightness to Sound"
+            android:id="@+id/invertCheckBox"
+            android:ems="10"
+            android:layout_marginTop="30dp"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_row="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Red"
+            android:id="@+id/textView"
+            android:layout_gravity="left|center"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Orange"
+            android:id="@+id/textView2"
+            android:layout_gravity="left|center"
+            android:layout_row="2"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Green"
+            android:id="@+id/textView3"
+            android:layout_gravity="left|center"
+            android:layout_row="3"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Yellow"
+            android:id="@+id/textView4"
+            android:layout_gravity="left|center"
+            android:layout_row="4"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Blue"
+            android:id="@+id/textView5"
+            android:layout_row="5"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Indigo"
+            android:id="@+id/textView6"
+            android:layout_row="6"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Violet"
+            android:id="@+id/textView7"
+            android:layout_row="7"
+            android:layout_column="0"
+            />
+
+
+        <Spinner
+            android:id="@+id/spinnerRedNote"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center|center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerOrangeNote"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="center|center"
+            />
+        <Spinner
+            android:id="@+id/spinnerYellowNote"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_gravity="center|center"
+            />
+        <Spinner
+            android:id="@+id/spinnerGreenNote"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_gravity="center|center"
+            />
+        <Spinner
+            android:id="@+id/spinnerBlueNote"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_gravity="center|center"
+            />
+        <Spinner
+            android:id="@+id/spinnerIndigoNote"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_gravity="center|center"
+            />
+        <Spinner
+            android:id="@+id/spinnerVioletNote"
+            android:layout_width="90dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="7"
+            android:layout_column="1"
+            android:layout_gravity="center|center"
+            />
+
+
+        <Spinner
+            android:id="@+id/spinnerRedInstrument"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_gravity="center|center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerOrangeInstrument"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_gravity="center|center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerYellowInstrument"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_gravity="center|center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerGreenInstrument"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_gravity="center|center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerBlueInstrument"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_gravity="center|center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerIndigoInstrument"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:layout_gravity="center|center"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerVioletInstrument"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:layout_gravity="center|center"
+            />
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayoutNewConfig"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="55dp"
+        android:layout_centerHorizontal="true">
+
+    <Button
+        android:id="@+id/confirmNewConfigButton"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Create Configuration"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

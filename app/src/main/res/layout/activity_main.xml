@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <FrameLayout
+        android:id="@+id/myFrameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" >
+
+        <TextureView
+            android:id="@+id/texturePreview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/colour_info"
+        android:layout_width="fill_parent"
+        android:layout_height="98dp"
+        android:layout_below="@id/myFrameView"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/averageColourDisplay"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceMediumInverse"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="Black"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/rValue"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="r:  0"
+            android:layout_centerInParent="true"
+            android:paddingBottom="65dp" />
+
+        <TextView
+            android:id="@+id/gValue"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="g:  0"
+            android:layout_centerInParent="true"
+            android:paddingBottom="25dp" />
+
+        <TextView
+            android:id="@+id/bValue"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="b:  0"
+            android:paddingTop="25dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/volumeLevel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="vol: 0.00"
+            android:paddingTop="69dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/colourDescription"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="Average Colour: Black"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/colour_info" >
+
+        <SeekBar
+            android:id="@+id/seekBarFps"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:max="99"
+            android:progress="30"
+            android:maxHeight="1000dip"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/refreshText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:text="Camera Frames per Sound: 30"
+            android:paddingTop="43dp"/>
+
+    </RelativeLayout>
+
+  <GridLayout
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:rowCount="1"
+      android:columnCount="4"
+      android:id="@+id/grid"
+      android:paddingBottom="0dp"
+      android:paddingTop="10dp"
+      android:orientation="horizontal"
+      android:layout_below="@id/seekLayout" >
+
+
+    <Button
+        android:id="@+id/muteButton"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:text="Mute"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="bottom"/>
+
+    <Button
+        android:id="@+id/changeConfigButton"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:text="Load Config"
+        android:layout_row="0"
+        android:layout_column="1"/>
+
+    <Button
+        android:id="@+id/editConfigButton"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:text="Edit Config"
+        android:layout_row="0"
+        android:layout_column="2"/>
+
+    <Button
+        android:id="@+id/newConfigButton"
+        android:layout_width="90dp"
+        android:layout_height="55dp"
+        android:text="New Config"
+        android:layout_row="0"
+        android:layout_column="3" />
+
+
+</GridLayout>
+
+</RelativeLayout>
